@@ -1,0 +1,36 @@
+##application name
+spring.application.name=zzg-springcloud-zookeeper-netty
+## zk ip + port
+spring.cloud.zookeeper.connectString=127.0.0.1:2181
+##port
+server.port=8083
+##\u6570\u636E\u5E93\u8FDE\u63A5\u5730\u5740
+spring.datasource.druid.url=jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&allowMultiQueries=true
+spring.datasource.druid.username=root
+spring.datasource.druid.password=ROOT
+spring.datasource.druid.driver-class-name=com.mysql.jdbc.Driver
+##\u6570\u636E\u5E93\u521D\u59CB\u5316\u8FDE\u63A5\u6C60
+spring.datasource.druid.initial-size=30
+##\u6570\u636E\u5E93\u6700\u5927\u8FDE\u63A5\u6570
+spring.datasource.druid.max-active=60
+##\u6700\u5C0F\u8FDE\u63A5
+spring.datasource.druid.min-idle=10
+spring.datasource.druid.pool-prepared-statements=true
+spring.datasource.druid.max-pool-prepared-statement-per-connection-size=20
+spring.datasource.druid.max-open-prepared-statements=20
+spring.datasource.druid.validation-query=select 1
+spring.datasource.druid.validation-query-timeout=2000
+spring.datasource.druid.test-on-borrow=true
+spring.datasource.druid.test-on-return=true
+spring.datasource.druid.test-while-idle=true
+spring.datasource.druid.keep-alive=true
+spring.datasource.druid.time-between-eviction-runs-millis=5000
+spring.datasource.druid.min-evictable-idle-time-millis=10000
+spring.datasource.druid.max-evictable-idle-time-millis=10000
+spring.datasource.druid.web-stat-filter.enabled=true
+spring.datasource.druid.stat-view-servlet.enabled=true
+mybatis.configuration.useGeneratedKeys=true
+mybatis.configuration.autoMappingBehavior=FULL
+mybatis.configuration.mapUnderscoreToCamelCase=true
+##mybatis\u7684xml\u6620\u5C04\u6587\u4EF6\u4F4D\u7F6E
+mybatis.mapper-locations=classpath:mapper/*.xml
